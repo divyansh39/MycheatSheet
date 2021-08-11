@@ -1,0 +1,116 @@
+body{
+    margin:0px auto;
+    width:100%;
+}
+
+nav ul li{
+    list-style-type: none;
+    float:left;
+    padding-right:50px;
+    text-transform: capitalize;
+}
+nav ul{
+    margin-top: 30px;
+    float:right;  
+ 
+}
+nav{
+    width:100%;
+    height:80px;
+    background-color:darkred;
+} 
+nav ul li a{
+    text-decoration: none;
+    color:beige;
+}
+
+.background,.border, .margin,.height,.boxmodel{
+    display: table;
+    height:100vh;
+    width:100%;
+} 
+.background h1, .border h1, .margin h1,.height h1,.boxmodel h1{
+   padding-left: 30px;
+}
+.background .content ul, .border .content ul, .margin .content ul,.height .content ul,.boxmodel .box p {
+    padding-left: 60px;
+}
+.boxmodel .box img{
+  margin:60px 500px 60px 500px;
+}
+.boxmodel .box li{
+    list-style-type: none;
+    padding-left:30px;
+}
+
+
+
+.inner-list li{
+    list-style-type: none;
+    float:left;
+    padding-right: 10px;
+}
+.inner-list li:last-child{
+    list-style-type: none;
+    float:none;
+}
+.inner-list li:not(:first-child)::before{
+    content:'|';
+    padding-left: 5px;
+}
+
+/*for mobile*/
+@media (min-width:320px) and (max-width:767px){
+    section .content{
+        width:100%;
+        float: left;   
+    }
+    section .iframes{
+        width:100%;
+        float:left;
+    }
+}
+/*for tab*/
+@media (min-width:768px) and (max-width:1023px){
+    section .content{
+        width:50%;
+        float: left;   
+    }
+    section .iframes{
+        width:50%;
+        float:left;
+    }
+}
+/*for laptop*/
+@media (min-width:1024px) and (max-width:1439px){
+    section .content{
+        width:40%;
+        float: left;   
+    }
+    section .iframes{
+        width:60%;
+        float:left;
+    }
+}
+/*for desktop*/
+@media (min-width:1440px) and (max-width:2559px){
+    section .content{
+        width:50%;
+        float: left;   
+    }
+    section .iframes{
+        width:50%;
+        float:left;
+    }
+}
+/*for projectors etc.*/
+@media (min-width:2560px){
+    section .content{
+        width:50%;
+        float: left;   
+    }
+    section .iframes{
+        width:50%;
+        float:left;
+    }
+}
